@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 7,
-    "start": "2022-06-10T06:04:58.682Z",
-    "end": "2022-06-10T06:04:59.301Z",
-    "duration": 619
+    "start": "2022-06-10T06:14:56.766Z",
+    "end": "2022-06-10T06:14:57.398Z",
+    "duration": 632
   },
   "tests": [
     {
@@ -34,7 +34,7 @@
     {
       "title": "ends with an exclamation point!",
       "fullTitle": "index.js welcomeMessage ends with an exclamation point!",
-      "duration": 3,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "message": "expected 's' to equal '!'",
@@ -97,7 +97,7 @@
     {
       "title": "ends with an exclamation point",
       "fullTitle": "index.js shortGreeting ends with an exclamation point",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:53:14)\n    at processImmediate (node:internal/timers:466:21)",
@@ -110,7 +110,7 @@
     {
       "title": "ends with an exclamation point!",
       "fullTitle": "index.js welcomeMessage ends with an exclamation point!",
-      "duration": 3,
+      "duration": 2,
       "currentRetry": 0,
       "err": {
         "message": "expected 's' to equal '!'",
@@ -173,7 +173,7 @@
     {
       "title": "ends with an exclamation point",
       "fullTitle": "index.js shortGreeting ends with an exclamation point",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
         "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:53:14)\n    at processImmediate (node:internal/timers:466:21)",
