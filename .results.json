@@ -5,22 +5,22 @@
     "passes": 7,
     "pending": 0,
     "failures": 3,
-    "start": "2022-06-10T06:24:37.148Z",
-    "end": "2022-06-10T06:24:37.818Z",
-    "duration": 670
+    "start": "2022-06-10T06:27:47.622Z",
+    "end": "2022-06-10T06:27:48.300Z",
+    "duration": 678
   },
   "tests": [
     {
       "title": "is defined",
       "fullTitle": "index.js currentUser is defined",
-      "duration": 10,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "contains \"Welcome to Flatbook, \"",
       "fullTitle": "index.js welcomeMessage contains \"Welcome to Flatbook, \"",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -41,42 +41,46 @@
     {
       "title": "contains \"WELCOME TO FLATBOOK, \"",
       "fullTitle": "index.js excitedWelcomeMessage contains \"WELCOME TO FLATBOOK, \"",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "contains the value of the 'currentUser' variable",
       "fullTitle": "index.js excitedWelcomeMessage contains the value of the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "ends with an exclamation point",
       "fullTitle": "index.js excitedWelcomeMessage ends with an exclamation point",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "contains \"Welcome, \"",
       "fullTitle": "index.js shortGreeting contains \"Welcome, \"",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:41:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "shortGreeting is not defined"
+        "message": "expected '' to contain 'Welcome, '",
+        "showDiff": false,
+        "actual": "",
+        "stack": "AssertionError: expected '' to contain 'Welcome, '\n    at Context.<anonymous> (test/indexTest.js:41:37)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
       "title": "contains the first initial of the name stored in the 'currentUser' variable",
       "fullTitle": "index.js shortGreeting contains the first initial of the name stored in the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:48:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "shortGreeting is not defined"
+        "message": "expected '' to contain 'G'",
+        "showDiff": false,
+        "actual": "",
+        "stack": "AssertionError: expected '' to contain 'G'\n    at Context.<anonymous> (test/indexTest.js:48:37)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
@@ -85,8 +89,11 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:53:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "shortGreeting is not defined"
+        "message": "expected '' to equal '!'",
+        "showDiff": true,
+        "actual": "",
+        "expected": "!",
+        "stack": "AssertionError: expected '' to equal '!'\n    at Context.<anonymous> (test/indexTest.js:53:43)\n    at processImmediate (node:internal/timers:466:21)"
       }
     }
   ],
@@ -95,21 +102,25 @@
     {
       "title": "contains \"Welcome, \"",
       "fullTitle": "index.js shortGreeting contains \"Welcome, \"",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:41:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "shortGreeting is not defined"
+        "message": "expected '' to contain 'Welcome, '",
+        "showDiff": false,
+        "actual": "",
+        "stack": "AssertionError: expected '' to contain 'Welcome, '\n    at Context.<anonymous> (test/indexTest.js:41:37)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
       "title": "contains the first initial of the name stored in the 'currentUser' variable",
       "fullTitle": "index.js shortGreeting contains the first initial of the name stored in the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:48:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "shortGreeting is not defined"
+        "message": "expected '' to contain 'G'",
+        "showDiff": false,
+        "actual": "",
+        "stack": "AssertionError: expected '' to contain 'G'\n    at Context.<anonymous> (test/indexTest.js:48:37)\n    at processImmediate (node:internal/timers:466:21)"
       }
     },
     {
@@ -118,8 +129,11 @@
       "duration": 0,
       "currentRetry": 0,
       "err": {
-        "stack": "ReferenceError: shortGreeting is not defined\n    at Context.<anonymous> (test/indexTest.js:53:14)\n    at processImmediate (node:internal/timers:466:21)",
-        "message": "shortGreeting is not defined"
+        "message": "expected '' to equal '!'",
+        "showDiff": true,
+        "actual": "",
+        "expected": "!",
+        "stack": "AssertionError: expected '' to equal '!'\n    at Context.<anonymous> (test/indexTest.js:53:43)\n    at processImmediate (node:internal/timers:466:21)"
       }
     }
   ],
@@ -127,14 +141,14 @@
     {
       "title": "is defined",
       "fullTitle": "index.js currentUser is defined",
-      "duration": 10,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "contains \"Welcome to Flatbook, \"",
       "fullTitle": "index.js welcomeMessage contains \"Welcome to Flatbook, \"",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
@@ -155,21 +169,21 @@
     {
       "title": "contains \"WELCOME TO FLATBOOK, \"",
       "fullTitle": "index.js excitedWelcomeMessage contains \"WELCOME TO FLATBOOK, \"",
-      "duration": 1,
+      "duration": 2,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "contains the value of the 'currentUser' variable",
       "fullTitle": "index.js excitedWelcomeMessage contains the value of the 'currentUser' variable",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     },
     {
       "title": "ends with an exclamation point",
       "fullTitle": "index.js excitedWelcomeMessage ends with an exclamation point",
-      "duration": 0,
+      "duration": 1,
       "currentRetry": 0,
       "err": {}
     }
